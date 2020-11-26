@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: orderingservice
+  profiles:
+    active: local
+user: user
+password: password
+
+logging:
+  level:
+    org:
+      springframework: ERROR
+    com:
+      eatza: DEBUG
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka  
+
